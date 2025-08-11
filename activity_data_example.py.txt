@@ -1,0 +1,44 @@
+# activity_data_example.py.txt
+
+# A dictionary to hold all of our rich presence details.
+# You can easily update this file without changing your main script.
+
+rich_presence_content = {
+    # What the user is currently doing.
+    # Appears as the top line of the status. Max 128 characters.
+    "state": "I'm a developer!",
+
+    # A detailed description of the user's status.
+    # Appears as the second line. Max 128 characters.
+    "details": "Working on: My Cool Project",
+
+    # The type of activity. The number corresponds to the following:
+    # 0: Playing (e.g., "Playing My Game")
+    # 1: Streaming -- -> Not Avalible for pypresence
+    # 2: Listening to (e.g., "Listening to Spotify")
+    # 3: Watching (e.g., "Watching My Favorite Show")
+    # 5: Competing
+    "activity_type": 0,
+
+    # The start time of the activity. Set to None here, and it will be
+    # dynamically updated in main.py to show a timer counting up.
+    "start": None,
+
+    # The name of a large image asset you've uploaded, or a full URL to an image.
+    # We are using a URL for this template.
+    "large_image": "https://example.com/image.png",
+
+    # The text that appears when you hover over the large image. Max 128 characters.
+    "large_text": "Large text",
+
+    # A small image asset name or URL. It is commented out below to prevent errors.
+    # If you want to use it, you must provide a valid value.
+    # "small_image": "",
+    # "small_text": "",
+
+    # A list of up to two buttons. Each button is a dictionary with a "label" and a "url".
+    "buttons": [
+        {"label": "Button 1", "url": "https://example.com/"},
+        {"label": "Button 2", "url": "https://example.com/"}
+    ]
+}
