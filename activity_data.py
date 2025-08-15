@@ -4,6 +4,8 @@ rich_presence_content = {
     "activity_type": 0, # 0, 2, 3, 5
     "large_image": "https://example.com/image.png/",
     "large_text": "Text to see when hovering",
+    "small_image": "https://example.com/image.png/",
+    "small_text": "Text to see when hovering",
     "start": None, # will configured on main.py
     "buttons": [
         {"label": "Button 1", "url": "https://example.com/"},
